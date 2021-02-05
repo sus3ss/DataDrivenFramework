@@ -1,5 +1,7 @@
 package com.w2a.testcases;
 
+import static org.testng.Assert.fail;
+
 import java.util.Hashtable;
 
 import org.openqa.selenium.Alert;
@@ -35,6 +37,7 @@ public class AddCustomerTest extends TestBase {
 		alert.accept();
 		
 		Thread.sleep(2000);
+		Assert.fail();
 		
 	}
 	
