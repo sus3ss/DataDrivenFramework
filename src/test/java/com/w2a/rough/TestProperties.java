@@ -24,6 +24,7 @@ public class TestProperties {
 		
 		//driver.findElement(By.cssSelector(OR.getProperty("bmlBtn"))).click();
 		System.out.println(OR.getProperty("bmlBtn"));
+		System.out.println("hello");
 	}
 
 }
