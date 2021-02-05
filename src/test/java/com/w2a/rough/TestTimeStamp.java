@@ -11,7 +11,7 @@ public class TestTimeStamp {
 		String screenshotName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
 		System.out.println(screenshotName);
 		System.out.println(d);
-		System.out.println("testiiii");
+		
    
 	}
 	
