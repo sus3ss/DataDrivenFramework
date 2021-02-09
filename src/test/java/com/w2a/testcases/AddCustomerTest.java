@@ -31,7 +31,7 @@ public class AddCustomerTest extends TestBase {
 		type("postcode_CSS",data.get("postcode"));
 		click("addbtn_CSS");
 		Thread.sleep(2000);
-		System.out.println("test12345");
+		System.out.println("test1234567");
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		
 		Assert.assertTrue(alert.getText().contains(data.get("alerttext")));
