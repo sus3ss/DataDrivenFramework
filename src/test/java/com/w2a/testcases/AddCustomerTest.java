@@ -36,6 +36,7 @@ public class AddCustomerTest extends TestBase {
 		
 		Assert.assertTrue(alert.getText().contains(data.get("alerttext")));
 		alert.accept();
+		System.out.println("test");
 		
 		Thread.sleep(2000);
 		
