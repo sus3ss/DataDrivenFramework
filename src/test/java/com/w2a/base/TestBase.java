@@ -41,7 +41,7 @@ public class TestBase {
 	public static Properties config = new Properties();
 	public static Properties OR = new Properties();
 	public static FileInputStream fis;
-	public static Logger log = Logger.getLogger("devpinoyLogger");
+	public static Logger log;
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
 	public static WebDriverWait wait;
@@ -51,6 +51,10 @@ public class TestBase {
 
 	@BeforeSuite
 	public void setUp() {
+		System.setProperty("Selenium.log",System.getProperty("user.dir")+"\\src\\test\\resources\\logs\\selenium.log");
+		System.setProperty("Application.log",System.getProperty("user.dir")+"\\src\\test\\resources\\logs\\Application.log");
+		
+		log= Logger.getLogger("devpinoyLogger");
 
 		if (driver == null) {
 
