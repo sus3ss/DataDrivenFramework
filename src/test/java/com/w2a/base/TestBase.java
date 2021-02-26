@@ -51,8 +51,8 @@ public class TestBase {
 
 	@BeforeSuite
 	public void setUp() {
-		System.setProperty("Selenium.log",System.getProperty("user.dir")+"\\src\\test\\resources\\logs\\selenium.log");
-		System.setProperty("Application.log",System.getProperty("user.dir")+"\\src\\test\\resources\\logs\\Application.log");
+		//System.setProperty("Selenium.log",System.getProperty("user.dir")+"\\src\\test\\resources\\logs\\Selenium.log");
+		//System.setProperty("Application.log",System.getProperty("user.dir")+"\\src\\test\\resources\\logs\\Application.log");
 		
 		log= Logger.getLogger("devpinoyLogger");
 
